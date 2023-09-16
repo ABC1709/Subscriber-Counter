@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscriber Counter</title>
+    <style>
+        body {
+            background-image: url('https://hirokuasaku.net/wp-content/uploads/2014/11/th_20141116-_DSC9636_7_8.jpg');
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap; /* 要素が折り返す */
+            justify-content: flex-start; /* サイトを左寄せに配置 */
+            align-items: flex-start; /* サイトを上部に配置 */
+            padding: 20px; /* 余白を追加 */
+            position: relative;
+        }
+
+        .background-blur {
+            filter: blur(10px); /* 背景画像をぼかす */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(225, 255, 255, 0.5); /* ボックスシャドウを追加 */
+            margin: 10px;
+            transition: transform 0.3s ease; /* アニメーションの設定 */
+            transform: scale(1); /* アニメーションの初期値 */
+            width: calc(30% - 20px); /* 幅を計算して指定（余白を考慮） */
+            height: 80px;
+        }
+
+        iframe.large {
+            transform: scale(2); /* 4番目のURLのiframeを2倍に拡大 */
+        }
+        iframe.ABC {
+            transform: scale(1.5); /* 4番目のURLのiframeを2倍に拡大 */
+        }
+
+        iframe.large:hover {
+            transform: scale(2.1); /* マウスオーバー時もサイズが変わらないように修正 */
+        }
+
+        iframe#fourth-site {
+            margin-top: 50px; /* 4番目のサイトを下に移動 */
+            margin-left: 220px; /* 4番目のサイトを右に移動 */
+        }
+        iframe#fourth-si {
+            margin-left: 230px; /* 4番目のサイトを右に移動 */
+        }
+        iframe#fourth-s {
+            margin-top: -43px;
+            margin-left: 867px; /* 4番目のサイトを右に移動 */
+        }
+        iframe#b {
+            margin-top: 50px;
+            margin-left: 200px; /* 4番目のサイトを右に移動 */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blur"></div>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCq-Fj5jknLsUf-MWSy4_brA?count=0"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCX6OQ3DkcsbYNE6H8uQQuVA?count=0"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCbCmjCuTUZos6Inko4u57UQ?count=0"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCtFb9IIr1gX_J--jR-I6ZRg?count=0" class="large" id="fourth-site"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCjp_3PEaOau_nT_3vnqKIvg?count=0" id="fourth-si"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCP1vrClG-6iGuFq7ls_NBsw?count=0" id="fourth-s"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCZf__ehlCEBPop-_sldpBUQ?count=0" class="large" id="fourth-site"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCX1xppLvuj03ubLio8jslyA?count=0" id="fourth-si"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UClLV6D8S4CrVJL64-aQvwTw?count=0" id="fourth-s"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCGmEuzhwWbqEpxO5FrLcBXg?count=0" class="ABC" id="b"></iframe>
+    <iframe src="https://livecounts.xyz/embed/dark/youtube-live-subscriber-count/UCGmEuzhwWbqEpxO5FrLcBXg?count=0" class="ABC" id="b"></iframe>
+</body>
+</html>
